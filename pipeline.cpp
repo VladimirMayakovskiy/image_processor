@@ -9,6 +9,7 @@ const std::map<std::string, Pipeline::FilterCreatorPtr> Pipeline::make_filters({
     {"edge", [](const FilterDescriptor& filter) { return CreateEdgeFilter(filter); }},
     {"blur", [](const FilterDescriptor& filter) { return CreateBlurFilter(filter); }},
     {"motion", [](const FilterDescriptor& filter) { return CreateMotionFilter(filter); }},
+    {"ex", [](const FilterDescriptor& filter) { return CreateExcessFilter(filter); }},
 });
 
 Pipeline::Pipeline(const std::vector<FilterDescriptor>& params) {

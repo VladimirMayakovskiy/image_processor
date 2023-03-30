@@ -8,7 +8,7 @@
 #include "filters/negative.h"
 #include "filters/blur.h"
 #include "filters/motion.h"
-
+#include "filters/excessively.h"
 Filter* CreateCropFilter(const FilterDescriptor& params) {
     if (params.params_cnt_ != 2) {
         throw std::invalid_argument(" Crop filter has 2 arguments: [-crop] [width, height].");
@@ -73,4 +73,10 @@ Filter* CreateMotionFilter(const FilterDescriptor& params) {
         throw std::invalid_argument(" Motion filter has no arguments: [-motion].");
     }
     return new MotionFilter();
+}
+Filter* CreateExcessFilter(const FilterDescriptor& params) {
+    if (params.params_cnt_!=0){
+        throw std::invalid_argument(" Excess filter has no arguments: [-ex].");
+    }
+    return new ExcessivelyFilter();
 }

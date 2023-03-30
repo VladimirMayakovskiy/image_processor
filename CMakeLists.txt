@@ -8,4 +8,4 @@ add_executable(image_processor main.cpp pipeline.h pipeline.cpp
         controller.h controller.cpp
         bmp_handler.h bmp_handler.cpp
         structures/filter_descriptor.h structures/matrix.h structures/pixel.h
-        filters/base.cpp filters/base.h cmd_handler.cpp cmd_handler.h filters/blur.cpp filters/blur.h filters/crop.cpp filters/crop.h filters/edge.cpp filters/edge.h filters/grayscale.cpp filters/grayscale.h filters/motion.cpp filters/motion.h filters/negative.cpp filters/negative.h filters/sharp.cpp filters/sharp.h)
+        filters/base.cpp filters/base.h cmd_handler.cpp cmd_handler.h filters/blur.cpp filters/blur.h filters/crop.cpp filters/crop.h filters/edge.cpp filters/edge.h filters/grayscale.cpp filters/grayscale.h filters/motion.cpp filters/motion.h filters/negative.cpp filters/negative.h filters/sharp.cpp filters/sharp.h filters/excessively.cpp filters/excessively.h)

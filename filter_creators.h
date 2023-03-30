@@ -9,3 +9,4 @@ Filter* CreateSharpeningFilter(const FilterDescriptor& params);
 Filter* CreateEdgeFilter(const FilterDescriptor& params);
 Filter* CreateBlurFilter(const FilterDescriptor& params);
 Filter* CreateMotionFilter(const FilterDescriptor& params);
+Filter* CreateExcessFilter(const FilterDescriptor& params);
